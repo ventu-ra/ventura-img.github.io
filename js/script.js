@@ -13,30 +13,33 @@ function lista() {
 
   res.then(function (dados) {
     listaImagens.innerHTML = "";
-
+    dados.reverse();
     for (var i = 0; i < dados.length; i++) {
       if (dados[i].linkImg != "") {
-        var li = document.createElement("li");
+        var div1 = document.createElement("div");
+        var div2 = document.createElement("div");
         var img = document.createElement("img");
 
+        img.className = "w-100 shadow-1-strong rounded mb-4";
+        div1.className = "col-lg-4 col-md-12 mb-4 mb-lg-0";
+        div2.className = "";
         img.src = dados[i].linkImg;
-        li.appendChild(img);
-        listaImagens.appendChild(li);
+
+        div2.appendChild(img);
+        div1.appendChild(div2);
+        listaImagens.appendChild(div1);
       }
     }
   });
 }
 
 function pegarDados() {
-
-  let input = document.querySelector("#link_imagem")
-  let imagens = input.value
-  
+  let input = document.querySelector("#link_imagem");
+  let imagens = input.value;
 
   // console.log(imagens);
 
   if (imagens != "") {
-
     fetch("https://teste-api-app-teste.herokuapp.com/api/users/inserts", {
       method: "POST",
       headers: {
@@ -52,7 +55,7 @@ function pegarDados() {
         // if (!response.ok) {
         //   throw new Error("Network response was not ok.");
         // }
-      
+
         lista();
       })
       .catch(console.error);
@@ -60,7 +63,7 @@ function pegarDados() {
     window.alert("Campo vazio!");
   }
 
-  input.value = ""
+  input.value = "";
 }
 
 adicionar.addEventListener("click", pegarDados);
