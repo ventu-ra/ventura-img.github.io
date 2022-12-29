@@ -3,33 +3,93 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Pedro Ventur and Braulio da Piedade">
-    <meta name="description" content="Trabalho Final">
+    <meta name="author">
+    <meta name=" description" content="Trabalho Final">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álbum de Fotos</title>
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <!-- Minified version -->
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <!-- Un-minified version -->
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Gallery</title>
 </head>
 
 <body>
-    <div id="interface">
-        <header id="cabecalho">
-            <h1>Álbum de Fotos</h1>
-        </header>
-        <main>
-            <ul id="imagens">
+    <header id="cabecalho">
+        <h1>Gallery</h1>
+    </header>
+    <div id="interface" class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-">
+        <main class="bg-white">
+            <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia"
+                                alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg"
+                                alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
 
-                <li class="fotos0">
-                    <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia"
-                        alt="">
-                </li>
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg"
+                                alt="Person using a pen to cross a task off a productivity paper card."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
 
-                <li class="fotos0">
-                    <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia"
-                        alt="">
-                </li>
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
 
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia"
+                                alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
 
-            </ul>
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia"
+                                alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
+
+                    <a href="#" class="group">
+                        <div
+                            class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://www.nexojornal.com.br/incoming/imagens/The-Last-Naruto-%C3%BAltimo-filme-da-franquia/alternates/LANDSCAPE_768/The%20Last%20Naruto%20-%20%C3%BAltimo%20filme%20da%20franquia"
+                                alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                                class="h-full w-full object-cover object-center group-hover:opacity-75">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
         </main>
         <section id="adicionar">
             <div>
@@ -42,11 +102,11 @@
                 <button> + Adicionar </button>
             </div>
         </section>
-
         <footer id="rodape">
             <p>Facebook | Twitter</p>
         </footer>
     </div>
 </body>
+
 
 </html>
