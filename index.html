@@ -4,23 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author">
-    <meta name=" description" content="Trabalho Final">
+    <meta name=" description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
-    <!-- Minified version -->
-    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
-    <!-- Un-minified version -->
-    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Gallery</title>
 </head>
 
-<body>
-    <div id="interface" class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-">
-        <header id="cabecalho">
+<body class="container-fluid">
+    <div id="interface" class=" mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-">
+        <header>
             <h1>Gallery</h1>
         </header>
         <main class="bg-white">
@@ -91,8 +86,13 @@
                 </div>
             </div>
         </main>
-        <footer id="rodape">
-            <p>Facebook | Twitter</p>
+
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Ventura</span>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
